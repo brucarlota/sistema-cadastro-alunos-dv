@@ -1,0 +1,15 @@
+C:\Users\Jozy Souza\source\repos\sistema-cadastro-alunos-dv\Listagem-alunos\bin\Debug\net10.0\Listagem-alunos.exe
+C:\Users\Jozy Souza\source\repos\sistema-cadastro-alunos-dv\Listagem-alunos\bin\Debug\net10.0\Listagem-alunos.deps.json
+C:\Users\Jozy Souza\source\repos\sistema-cadastro-alunos-dv\Listagem-alunos\bin\Debug\net10.0\Listagem-alunos.runtimeconfig.json
+C:\Users\Jozy Souza\source\repos\sistema-cadastro-alunos-dv\Listagem-alunos\bin\Debug\net10.0\Listagem-alunos.dll
+C:\Users\Jozy Souza\source\repos\sistema-cadastro-alunos-dv\Listagem-alunos\bin\Debug\net10.0\Listagem-alunos.pdb
+C:\Users\Jozy Souza\source\repos\sistema-cadastro-alunos-dv\Listagem-alunos\obj\Debug\net10.0\Listagem-alunos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jozy Souza\source\repos\sistema-cadastro-alunos-dv\Listagem-alunos\obj\Debug\net10.0\Listagem-alunos.AssemblyInfoInputs.cache
+C:\Users\Jozy Souza\source\repos\sistema-cadastro-alunos-dv\Listagem-alunos\obj\Debug\net10.0\Listagem-alunos.AssemblyInfo.cs
+C:\Users\Jozy Souza\source\repos\sistema-cadastro-alunos-dv\Listagem-alunos\obj\Debug\net10.0\Listagem-alunos.csproj.CoreCompileInputs.cache
+C:\Users\Jozy Souza\source\repos\sistema-cadastro-alunos-dv\Listagem-alunos\obj\Debug\net10.0\Listagem-alunos.sourcelink.json
+C:\Users\Jozy Souza\source\repos\sistema-cadastro-alunos-dv\Listagem-alunos\obj\Debug\net10.0\Listagem-alunos.dll
+C:\Users\Jozy Souza\source\repos\sistema-cadastro-alunos-dv\Listagem-alunos\obj\Debug\net10.0\refint\Listagem-alunos.dll
+C:\Users\Jozy Souza\source\repos\sistema-cadastro-alunos-dv\Listagem-alunos\obj\Debug\net10.0\Listagem-alunos.pdb
+C:\Users\Jozy Souza\source\repos\sistema-cadastro-alunos-dv\Listagem-alunos\obj\Debug\net10.0\Listagem-alunos.genruntimeconfig.cache
+C:\Users\Jozy Souza\source\repos\sistema-cadastro-alunos-dv\Listagem-alunos\obj\Debug\net10.0\ref\Listagem-alunos.dll

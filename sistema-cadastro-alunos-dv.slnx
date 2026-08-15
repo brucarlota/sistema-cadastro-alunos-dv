@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Cadastro-alunos/Cadastro-alunos.csproj" />
+  <Project Path="Listagem-alunos/Listagem-alunos.csproj" Id="e14381c2-4d88-487f-a593-b322efe0e51a" />
+</Solution>
