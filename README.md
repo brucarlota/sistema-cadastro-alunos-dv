@@ -1,2 +1,6 @@
 # sistema-cadastro-alunos-dv
-Desafio em Squad – Sistema de cadastro de alunos
+
+## Executando o programa
+```bash
+   dotnet run --project SistemaCadastroAlunos.csproj
+```
