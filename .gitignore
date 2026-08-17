@@ -1,0 +1,45 @@
+## Visual Studio User-Specific Files
+*.suo
+*.user
+*.userprefs
+*.userrs
+*.slnx
+*.bin
+*.obj
+*.csproj
+
+
+## Build Results / Output
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Bb]uild/
+
+## Visual Studio Cache and Logs
+.vs/
+*.log
+*.cache
+*_i.c
+*_p.c
+*.ilk
+*.meta
+*.pch
+*.pdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tlog
+*.vcproj.filters
+*.lib
+*.scc
+
+## Package Managers and Backup
+packages/
+*.nupkg
+*.snupkg
+.nuget/
