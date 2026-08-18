@@ -135,7 +135,7 @@ void ExibirListagemAlunos()
 
     if (totalAlunos == 0)
     {
-        Console.WriteLine("Nenhum aluno cadastrado ainda.");
+        Console.WriteLine("Nenhum aluno cadastrado ainda!");
         return;
     }
 
