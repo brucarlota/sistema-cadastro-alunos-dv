@@ -1,15 +1,6 @@
-## Visual Studio User-Specific Files
-*.suo
-*.user
-*.userprefs
-*.userrs
-*.slnx
-*.bin
-*.obj
-*.csproj
-
-
-## Build Results / Output
+# Build outputs
+bin/
+obj/
 [Bb]in/
 [Oo]bj/
 [Dd]ebug/
@@ -18,28 +9,32 @@ x64/
 x86/
 [Bb]uild/
 
-## Visual Studio Cache and Logs
+# Visual Studio / VS Code
 .vs/
-*.log
-*.cache
-*_i.c
-*_p.c
-*.ilk
-*.meta
-*.pch
-*.pdb
-*.pgc
-*.pgd
-*.rsp
-*.sbr
-*.tlb
-*.tlog
-*.vcproj.filters
-*.lib
-*.scc
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
 
-## Package Managers and Backup
+# NuGet
 packages/
 *.nupkg
 *.snupkg
-.nuget/
+*.nuspec
+
+# Logs
+*.log
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Test results
+TestResults/
+coverage/
+*.trx
+
+# Temporary files
+*.tmp
+*.temp
