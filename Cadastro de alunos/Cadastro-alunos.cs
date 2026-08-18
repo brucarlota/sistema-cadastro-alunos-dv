@@ -1,8 +1,7 @@
 ﻿// Sistema de Cadastro de Alunos
-
-// Quantidade máxima de alunos que o sistema permite cadastrar
 using System.Globalization;
 
+// Quantidade máxima de alunos que o sistema permite cadastrar
 const int MAX_ALUNOS = 10;
 
 // Arrays paralelos: a posição "i" em cada array pertence ao mesmo aluno
@@ -13,7 +12,6 @@ double[] nota2 = new double[MAX_ALUNOS];
 
 // Contador de quantos alunos já foram cadastrados de fato
 int totalAlunos = 0;
-
 int opcao;
 
 do
@@ -28,10 +26,10 @@ do
             break;
 				case 2:
 						Console.WriteLine("\nUtilizar alunos do sistema...");
-						nomes = new string[] { "Alice", "Bob", "Charlie", "Diana", "Ethan", "Fiona", "George", "Hannah", "Ian", "Julia" };
-						idades = new int[] { 20, 22, 21, 23, 19, 20, 22, 21, 23, 20 };
-						nota1 = new double[] { 8.5, 7.0, 9.0, 8.0, 7.5, 8.5, 9.0, 8.0, 7.5, 8.5 };
-						nota2 = new double[] { 8.0, 7.5, 8.5, 8.0, 7.0, 8.0, 8.5, 8.0, 7.5, 8.0 };
+						nomes = ["Alice", "Bob", "Charlie", "Diana", "Ethan", "Fiona", "George", "Hannah", "Ian", "Julia"];
+						idades = [20, 22, 21, 23, 19, 20, 22, 21, 23, 20];
+						nota1 = [8.5, 2.0, 9.0, 8.0, 7.5, 8.5, 9.0, 8.0, 7.5, 8.5];
+						nota2 = [8.0, 4.5, 8.5, 8.0, 7.0, 8.0, 8.5, 8.0, 7.5, 8.0];
 						totalAlunos = MAX_ALUNOS;
 						break;
 				case 3:
@@ -111,6 +109,7 @@ void ExibirMenuPrincipal()
 
 					case 3:
 							Console.WriteLine("Opção selecionada: Exibir aprovados");
+							AlunosAprovados();
 							break;
 
 					case 4:
@@ -223,4 +222,23 @@ double LerNumeroDecimal(string mensagem)
     }
 
     return valor;
+}
+
+void AlunosAprovados()
+{
+	int totalAlunosAprovados = 0;
+	
+	Console.WriteLine("\n--- Alunos Aprovados ---\n");
+
+	for (int i = 0; i < nomes.Length; i++)
+	{
+			double media = (nota1[i] + nota2[i]) / 2;
+
+			if (media >= 7.0)
+			{
+					Console.WriteLine($"{nomes[i]} - Média: {media:F1}");
+					totalAlunosAprovados++;
+			}
+	}
+	Console.WriteLine($"Total: {totalAlunosAprovados} alunos");
 }
