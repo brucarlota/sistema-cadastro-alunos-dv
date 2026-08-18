@@ -1,10 +1,6 @@
 ﻿using System.Globalization;
 
-string[] nomeAlunos = new string[2];
-
-// PARA TESTES
-nomeAlunos[0] = "Eduardo Alves";
-nomeAlunos[1] = "Pedro";
+string[] nomeAlunos = new string[];
 
 Console.WriteLine("== BUSCAR ALUNO ==");
 Console.WriteLine();

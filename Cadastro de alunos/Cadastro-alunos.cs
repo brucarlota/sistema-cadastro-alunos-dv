@@ -1,6 +1,8 @@
 ﻿// Sistema de Cadastro de Alunos
 
 // Quantidade máxima de alunos que o sistema permite cadastrar
+using System.Globalization;
+
 const int MAX_ALUNOS = 10;
 
 // Arrays paralelos: a posição "i" em cada array pertence ao mesmo aluno
@@ -52,6 +54,35 @@ do
 } while (opcao != 0);
 
 
+void BuscarAluno() 
+{
+    Console.WriteLine("== BUSCAR ALUNO ==");
+    Console.WriteLine();
+
+    Console.Write("Informe o nome do aluno: ");
+    string nomeDigitado = Console.ReadLine().Trim();
+
+    // Coloca primeira letra em maiúsculo de cada palavra depois da entrada
+    string nome = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(nomeDigitado);
+
+    if (!nomes.Contains(nome))
+    {
+        Console.WriteLine();
+        Console.WriteLine("Aluno não encontrado.");
+        return;
+    }
+
+    int posicao = nomes.IndexOf(nome);
+
+    Console.WriteLine("Aluno encontrado!");
+    Console.WriteLine();
+    Console.WriteLine($"Nome: {nomes[posicao]}");
+    Console.WriteLine($"Idade: {idades[posicao]}");
+    Console.WriteLine($"Nota 1: {nota1[posicao]}");
+    Console.WriteLine($"Nota 2: {nota2[posicao]}");
+    Console.WriteLine($"Média: {(nota1[posicao] + nota2[posicao]) / 2}");
+}
+
 void ExibirMenuPrincipal()
 {
 	do
@@ -75,7 +106,8 @@ void ExibirMenuPrincipal()
 
 					case 2:
 							Console.WriteLine("Opção selecionada: Buscar aluno");
-							break;
+                            BuscarAluno();
+                            break;
 
 					case 3:
 							Console.WriteLine("Opção selecionada: Exibir aprovados");
