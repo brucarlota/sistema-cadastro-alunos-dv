@@ -43,3 +43,43 @@ packages/
 *.nupkg
 *.snupkg
 .nuget/
+# Build outputs
+bin/
+obj/
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Bb]uild/
+
+# Visual Studio / VS Code
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# NuGet
+packages/
+*.nupkg
+*.snupkg
+*.nuspec
+
+# Logs
+*.log
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Test results
+TestResults/
+coverage/
+*.trx
+
+# Temporary files
+*.tmp
+*.temp
