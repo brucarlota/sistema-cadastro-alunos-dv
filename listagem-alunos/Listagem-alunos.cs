@@ -59,7 +59,7 @@ int LerOpcaoMenu()
 
     return -1;
 }
-void ExibirAlunos()
+void ExibirListagemAlunos()
 {
     Console.WriteLine("\n--- Alunos Cadastrados ---\n");
 
