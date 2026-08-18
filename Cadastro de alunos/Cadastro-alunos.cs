@@ -100,7 +100,7 @@ void ExibirMenuPrincipal()
 		{
 			case 1:
 				Console.WriteLine("Opção selecionada: Listar alunos");
-        ExibirListagemAlunos();
+				ExibirListagemAlunos();
 				break;
 
 			case 2:
@@ -115,6 +115,7 @@ void ExibirMenuPrincipal()
 
 			case 4:
 				Console.WriteLine("Opção selecionada: Exibir média da turma");
+				CalculaMediaTurma();
 				break;
 
 			case 0:
@@ -131,23 +132,23 @@ void ExibirMenuPrincipal()
 
 void ExibirListagemAlunos()
 {
-    Console.WriteLine("\n--- Alunos Cadastrados ---\n");
+	Console.WriteLine("\n--- Alunos Cadastrados ---\n");
 
-    if (totalAlunos == 0)
-    {
-        Console.WriteLine("Nenhum aluno cadastrado ainda.");
-        return;
-    }
+	if (totalAlunos == 0)
+	{
+		Console.WriteLine("Nenhum aluno cadastrado ainda.");
+		return;
+	}
 
-    for (int i = 0; i < totalAlunos; i++)
-    {
-        double media = (nota1[i] + nota2[i]) / 2.0;
+	for (int i = 0; i < totalAlunos; i++)
+	{
+		double media = (nota1[i] + nota2[i]) / 2.0;
 
-        Console.WriteLine($"Nome: {nomes[i]}");
-        Console.WriteLine($"Idade: {idades[i]}");
-        Console.WriteLine($"Média: {media:F1}");
-        Console.WriteLine("-------------------------");
-    }
+		Console.WriteLine($"Nome: {nomes[i]}");
+		Console.WriteLine($"Idade: {idades[i]}");
+		Console.WriteLine($"Média: {media:F1}");
+		Console.WriteLine("-------------------------");
+	}
 }
 
 void ExibirMenu()
@@ -200,26 +201,6 @@ void CadastrarAluno()
 	Console.WriteLine($"\nAluno \"{nomes[indice]}\" cadastrado com sucesso!");
 }
 
-void ListarAlunos()
-{
-	Console.WriteLine("\n--- Lista de Alunos ---");
-
-	if (totalAlunos == 0)
-	{
-		Console.WriteLine("Nenhum aluno cadastrado ainda.");
-		return;
-	}
-
-	for (int i = 0; i < totalAlunos; i++)
-	{
-		Console.WriteLine($"\nAluno {i + 1}");
-		Console.WriteLine($"  Nome:   {nomes[i]}");
-		Console.WriteLine($"  Idade:  {idades[i]}");
-		Console.WriteLine($"  Nota 1: {nota1[i]:F1}");
-		Console.WriteLine($"  Nota 2: {nota2[i]:F1}");
-	}
-}
-
 int LerNumeroInteiro(string mensagem)
 {
 	int valor;
@@ -263,4 +244,24 @@ void AlunosAprovados()
 		}
 	}
 	Console.WriteLine($"Total: {totalAlunosAprovados} alunos");
+}
+
+void CalculaMediaTurma()
+{
+	if (nomes.Length == 0)
+	{
+		Console.WriteLine("\nNão é possível calcular a média da turma.");
+		return;
+	}
+	double somaDasMedias = 0;
+
+	for (int i = 0; i < nomes.Length; i++)
+	{
+		double media = (nota1[i] + nota2[i]) / 2.0;
+		somaDasMedias += media;
+	}
+
+	double mediaDaTurma = somaDasMedias / nomes.Length;
+
+	Console.WriteLine($"\nMédia da turma: {mediaDaTurma:F1}");
 }
